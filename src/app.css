@@ -1,0 +1,117 @@
+:root {
+  --main-font-family: 'Poppins, Helvetica, Arial, sans-serif';
+  --main-bg-color: #E9ECFE;
+  --container-bg-color: #FFFFFF;
+  --main-color: #351791;
+  --secondary-highlight-color: #4F52FE;
+  --main-highlight-color: #FB6B4B;
+  --main-pale-color: #A59BDB;
+  --button-color: var(--container-bg-color);
+  --button-bg-color: var(--main-color);
+  --main-font-size: 23px;
+  --main-line-height: 36px;
+  --main-font-weight: 400;
+  --bold-font-weight: 500;
+  --button-font-weight: 600;
+  --title-font-weight: 700;
+  --title-font-size: 60px;
+  --title-line-height: 66px;
+
+  font-family: --var(--main-font-family);
+  font-size: var(--main-font-size);
+  line-height: var(--main-line-height);
+  font-weight: var(--main-font-weight);
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  padding: 60px;
+  /* margin: 0; */
+  /* display: flex;
+  place-items: center; */
+  min-width: 320px;
+  min-height: 100vh; 
+}
+
+.title {
+  font-weight: var(--title-font-weight);
+  font-size: var(--title-font-size);
+  line-height: var(--title-line-height);
+  white-space: pre-wrap;
+}
+
+.secondary {
+  color: var(--secondary-highlight-color);
+}
+
+.card {
+  padding: 2em;
+}
+
+#app {
+  max-width: 1320px;
+  height: 850px;
+  margin: auto;
+  border-radius: 30px;
+  background-color: #000000;
+  padding: 112px;
+  /* margin: 0 auto;
+  padding: 2rem;
+  text-align: center; */
+}
+
+button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 40px;
+  gap: 6px;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  font-weight: var(--button-font-weight);
+}
+/* button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+} */
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--main-color);
+    background-color: var(--main-bg-color);
+  }
+
+  #app {
+    background-color: var(--container-bg-color);
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: var(--button-bg-color);
+    color: var(--button-color);
+  }
+}
