@@ -1,11 +1,13 @@
 <script>
+  import { Link } from "svelte-routing";
+  import clockIcon from "./assets/alarm_clock.svg";
+  import helpIcon from "./assets/help.svg";
+  import illustration from "./assets/illustration.svg";
   import Button from "./Button.svelte";
   import IconWithText from "./IconWithText.svelte";
   import Layout from "./Layout.svelte";
   import Text from "./Text.svelte";
   import Title from "./Title.svelte";
-  import helpIcon from "./assets/help.svg";
-  import clockIcon from "./assets/alarm_clock.svg";
 </script>
 
 <Layout>
@@ -21,7 +23,7 @@
   </div>
 
   <img
-    src="../public/illustration.svg"
+    src={illustration}
     alt="illustration for KaraFun Business"
     class="illustration"
   />
@@ -36,7 +38,9 @@
     Follow the steps below to setup your business account.
   </Text>
 
-  <Button>Let's go</Button>
+  <Link to="/form">
+    <Button>Let's go</Button>
+  </Link>
 
   <p class="info">Usually complete within 3 minutes</p>
 </Layout>
