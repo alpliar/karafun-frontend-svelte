@@ -1,6 +1,7 @@
 <script>
   import logo from "./assets/logo.svg";
   import Counter from "./lib/Counter.svelte";
+  import Title from "./Title.svelte";
 </script>
 
 <main>
@@ -9,10 +10,8 @@
       <img src={logo} class="logo" alt="KaraFun Business Logo" />
     </a>
   </div>
-  <h1 class="title">
-    <span class="secondary">Get Started</span>
-    <span style="display: block">with KaraFun Business</span>
-  </h1>
+
+  <Title prefix="Get started">with KaraFun Business</Title>
 
   <hr class="divider" />
 

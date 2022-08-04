@@ -52,10 +52,11 @@ body {
 }
 
 .title {
+  display: flex;
+  flex-direction: column;
   font-weight: var(--title-font-weight);
   font-size: var(--title-font-size);
   line-height: var(--title-line-height);
-  white-space: pre-wrap;
 }
 
 .secondary {
