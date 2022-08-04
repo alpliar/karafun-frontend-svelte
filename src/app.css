@@ -1,23 +1,27 @@
 :root {
-  --main-font-family: 'Poppins, Helvetica, Arial, sans-serif';
+  --main-font-family: 'Poppins', Helvetica, Arial, sans-serif;
   --main-bg-color: #E9ECFE;
   --container-bg-color: #FFFFFF;
   --main-color: #351791;
+  --text-color: #2D3475;
   --secondary-highlight-color: #4F52FE;
   --main-highlight-color: #FB6B4B;
   --main-pale-color: #A59BDB;
   --button-color: var(--container-bg-color);
   --button-bg-color: var(--main-color);
   --main-font-size: 23px;
-  --main-line-height: 36px;
+  --small-font-size: 16px;
+  --main-line-height: 24px;
+  --big-line-height: 32px;
   --main-font-weight: 400;
   --bold-font-weight: 500;
   --button-font-weight: 600;
   --title-font-weight: 700;
   --title-font-size: 60px;
   --title-line-height: 66px;
+  --button-font-size: 16px;
 
-  font-family: --var(--main-font-family);
+  font-family: var(--main-font-family);
   font-size: var(--main-font-size);
   line-height: var(--main-line-height);
   font-weight: var(--main-font-weight);
@@ -52,19 +56,19 @@ body {
 }
 
 .title {
+  margin: 0;
   display: flex;
   flex-direction: column;
+  color: var(--main-color);
   font-weight: var(--title-font-weight);
   font-size: var(--title-font-size);
   line-height: var(--title-line-height);
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .secondary {
   color: var(--secondary-highlight-color);
-}
-
-.card {
-  padding: 2em;
 }
 
 #app {
@@ -73,13 +77,17 @@ body {
   margin: auto;
   border-radius: 30px;
   background-color: #000000;
-  padding: 112px;
   /* margin: 0 auto;
   padding: 2rem;
   text-align: center; */
 }
 
+main {
+  padding: 58.43px 112px;
+}
+
 button {
+  font-family: var(--main-font-family);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -88,7 +96,10 @@ button {
   gap: 6px;
   border-radius: 50px;
   border: 1px solid transparent;
+  font-size: var(--button-font-size);
   font-weight: var(--button-font-weight);
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 /* button:hover {
   border-color: #646cff;
@@ -100,7 +111,7 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: var(--main-color);
+    color: var(--text-color);
     background-color: var(--main-bg-color);
   }
 
