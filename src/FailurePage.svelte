@@ -34,6 +34,6 @@
     align-items: center;
   }
   .header {
-    height: calc(90px-32px);
+    height: calc(22px);
   }
 </style>
