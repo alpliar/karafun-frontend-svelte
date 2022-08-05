@@ -52,7 +52,7 @@
   input {
     border: 2px solid #351791;
     border-radius: 75px;
-    width: 350px;
+    width: calc(350px - 24px * 2);
     padding: 16px 24px;
   }
 
@@ -63,6 +63,7 @@
 
   input,
   input::placeholder {
+    font-size: var(--small-font-size);
     color: var(--main-color);
   }
 </style>
