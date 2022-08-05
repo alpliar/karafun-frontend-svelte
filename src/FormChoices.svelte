@@ -4,6 +4,7 @@
   const dispatch = createEventDispatcher();
 
   export let choices = [];
+  export let buttonLabel = `Let's go`;
 
   let selection = "one";
 
@@ -27,7 +28,7 @@
       </li>
     {/each}
   </ul>
-  <Button on:click={handleClick}>Let's go</Button>
+  <Button on:click={handleClick}>{buttonLabel}</Button>
 </div>
 
 <style>

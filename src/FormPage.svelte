@@ -46,7 +46,11 @@
   />
   <Title prefix={currentStep.titlePrefix}>{@html currentStep.title}</Title>
   {#if currentStep.choices.length > 0}
-    <FormChoices on:submit={handleSubmitStep} choices={currentStep.choices} />
+    <FormChoices
+      on:submit={handleSubmitStep}
+      choices={currentStep.choices}
+      buttonLabel={currentStep.buttonLabel}
+    />
   {:else}
     <FormInputs on:submit={handleSubmitFinalStep} />
   {/if}

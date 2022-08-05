@@ -3,6 +3,7 @@ const formSteps = [
     id: 1,
     title: "What kind of business <br /> are you starting/running ?",
     progression: 15,
+    buttonLabel: `Let's go`,
     choices: [
       {
         label: "Private Suites Karaoke Box",
@@ -38,6 +39,7 @@ const formSteps = [
     id: 2,
     title: "When are you opening <br />your venue?",
     progression: 50,
+    buttonLabel: "Continue",
     choices: [
       {
         label: "In more than 6 months",
