@@ -25,7 +25,7 @@ const formSteps = [
         value: "five",
       },
       {
-        label: "I’xm a DJ/KJ myself",
+        label: "I’m a DJ/KJ myself",
         value: "six",
       },
       {
