@@ -19,6 +19,7 @@
     gap: 12px;
     align-items: center;
     font-size: 20px;
+    font-weight: 600;
   }
   .link-icon {
     width: 20px;
