@@ -10,6 +10,7 @@
   --main-pale-color: #A59BDB;
   --button-color: var(--container-bg-color);
   --button-bg-color: var(--main-color);
+  --text-font-size: 20px;
   --main-font-size: 23px;
   --small-font-size: 16px;
   --main-line-height: 24px;
