@@ -32,8 +32,9 @@
 
   const handleSubmitFinalStep = (data) => {
     hasSubmittedForm = true;
+
     alert(
-      `Thanks ${data.firstName}, we'll be back asap with a detailed estimate`
+      `Thanks ${data.detail.firstName}, we'll be back asap with a detailed estimate`
     );
   };
 </script>
