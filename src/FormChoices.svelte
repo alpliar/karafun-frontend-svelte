@@ -58,6 +58,10 @@
     /* border-color: var(--main-highlight-color); */
   }
 
+  input:checked ~ label {
+    color: var(--main-color);
+  }
+
   label {
     font-size: var(--small-font-size);
   }
