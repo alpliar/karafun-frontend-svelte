@@ -18,6 +18,7 @@
     flex-direction: row;
     gap: 12px;
     align-items: center;
+    font-size: 20px;
   }
   .link-icon {
     width: 20px;
