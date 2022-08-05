@@ -1,11 +1,11 @@
 <script>
-  import { createEventDispatcher, each } from "svelte/internal";
+  import { createEventDispatcher } from "svelte";
   import Button from "./Button.svelte";
   const dispatch = createEventDispatcher();
 
   export let choices = [];
 
-  let selection = undefined;
+  let selection = "one";
 
   const handleClick = () => {
     dispatch("submit", { value: selection });

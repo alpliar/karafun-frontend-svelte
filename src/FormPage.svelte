@@ -1,20 +1,26 @@
 <script>
+  import { navigate } from "svelte-routing";
+  import formSteps from "./data/formSteps";
+  import FormChoices from "./FormChoices.svelte";
+  import FormInputs from "./FormInputs.svelte";
   import Layout from "./Layout.svelte";
   import Progress from "./Progress.svelte";
   import Title from "./Title.svelte";
-  import FormChoices from "./FormChoices.svelte";
-  import formSteps from "./data/formSteps";
-  import Button from "./Button.svelte";
-  import FormInputs from "./FormInputs.svelte";
 
   let currentStepIndex = 1;
   let currentStep = formSteps[0];
   let hasSubmittedForm = false;
 
-  const handleNextStep = (event) => {
+  const handleSubmitStep = (event) => {
     const { value } = event.detail;
 
-    console.log("step", currentStep, ", choosen value", value);
+    // console.log("step", currentStep, ", choosen value", value);
+    if (
+      currentStepIndex === 1 &&
+      !currentStep.choices.slice(0, 2).some((choice) => choice.value === value)
+    ) {
+      navigate("/oops", { replace: true });
+    }
 
     const nextId = currentStepIndex + 1;
 
@@ -24,7 +30,7 @@
     }
   };
 
-  const handleSubmit = (data) => {
+  const handleSubmitFinalStep = (data) => {
     hasSubmittedForm = true;
     alert(
       `Thanks ${data.firstName}, we'll be back asap with a detailed estimate`
@@ -39,8 +45,8 @@
   />
   <Title prefix={currentStep.titlePrefix}>{@html currentStep.title}</Title>
   {#if currentStep.choices.length > 0}
-    <FormChoices on:submit={handleNextStep} choices={currentStep.choices} />
+    <FormChoices on:submit={handleSubmitStep} choices={currentStep.choices} />
   {:else}
-    <FormInputs on:submit={handleSubmit} />
+    <FormInputs on:submit={handleSubmitFinalStep} />
   {/if}
 </Layout>

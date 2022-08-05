@@ -1,9 +1,14 @@
 <script>
+  import { navigate } from "svelte-routing";
   import Button from "./Button.svelte";
   import Layout from "./Layout.svelte";
   import Link from "./Link.svelte";
   import Text from "./Text.svelte";
   import Title from "./Title.svelte";
+
+  const handleVisitKaraFunPro = () => {
+    navigate("https://www.karafun.fr/pro/", { replace: true });
+  };
 </script>
 
 <Layout>
@@ -16,8 +21,8 @@
     bars like yours. See our KaraFun Pro plans below.
   </Text>
   <div class="flex">
-    <Button>Visit KaraFun Pro</Button>
-    <Link>Read more</Link>
+    <Button on:click={handleVisitKaraFunPro}>Visit KaraFun Pro</Button>
+    <Link to="/">Read more</Link>
   </div>
 </Layout>
 
