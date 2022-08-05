@@ -1,5 +1,5 @@
 <script>
-  export let prefix;
+  export let prefix = undefined;
 </script>
 
 <h1 class="title">

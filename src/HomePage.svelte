@@ -48,6 +48,7 @@
 <style>
   .info {
     color: #a59bdb;
+    font-size: var(--small-font-size);
   }
 
   .divider {
