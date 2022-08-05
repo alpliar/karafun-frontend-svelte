@@ -1,6 +1,6 @@
 <script>
   import { Route, Router } from "svelte-routing";
-  import FailPage from "./FailPage.svelte";
+  import FailurePage from "./FailurePage.svelte";
   import FormPage from "./FormPage.svelte";
   import HomePage from "./HomePage.svelte";
 
@@ -13,5 +13,5 @@
   <!-- <Route path="about" component="{About}" /> -->
   <Route path="/"><HomePage /></Route>
   <Route path="/form"><FormPage /></Route>
-  <Route path="/fail"><FailPage /></Route>
+  <Route path="/oops"><FailurePage /></Route>
 </Router>

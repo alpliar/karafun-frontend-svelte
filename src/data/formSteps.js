@@ -57,6 +57,13 @@ const formSteps = [
       },
     ],
   },
+  {
+    id: 3,
+    title: `Let's get your account setup.`,
+    titlePrefix: "Great!",
+    progression: 85,
+    choices: [],
+  },
 ];
 
 export default formSteps;

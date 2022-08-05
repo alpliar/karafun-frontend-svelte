@@ -8,3 +8,9 @@
   {/if}
   <slot />
 </h1>
+
+<style>
+  h1 {
+    max-width: 1000px;
+  }
+</style>
