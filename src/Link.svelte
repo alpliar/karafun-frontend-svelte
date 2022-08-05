@@ -1,6 +1,6 @@
 <script>
   import { Link } from "svelte-routing";
-  import arrow from "./assets/arrow_right.svg";
+  import arrow from "./assets/arrow_right_orange.svg";
   export let to = undefined;
 </script>
 
