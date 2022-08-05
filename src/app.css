@@ -1,5 +1,6 @@
 :root {
   --main-font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  --title-font-family: 'Inter', Helvetica, Arial, sans-serif;
   --main-bg-color: #E9ECFE;
   --container-bg-color: #FFFFFF;
   --main-color: #351791;
@@ -63,6 +64,8 @@ body {
   font-weight: var(--title-font-weight);
   font-size: var(--title-font-size);
   line-height: var(--title-line-height);
+  font-family: var(--title-font-family);
+  letter-spacing: -0.04em;
   margin-top: 40px;
   margin-bottom: 40px;
 }
