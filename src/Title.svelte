@@ -12,5 +12,6 @@
 <style>
   h1 {
     max-width: 1000px;
+    font-family: var(--title-font-family);
   }
 </style>
